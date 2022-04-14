@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form action="salva.html" method="get"> 
+        <!--tag para encaixar todo o meu formulário, onde ficarao os meus itens--> 
+        <!--action serve para eu direcionar para onde esse meu formulario sera enviado. geralmente para um servidor-->
+        <!--o method=get faz com que todos os dados fiquem salvos e vão na URL-->
+        <!--o method=post faz com que os dados sejam enviados por 'baixo dos panos' quando tratamos de dados muito sensiveis-->
+
+        <label>Text</label> <!--label é uma tag semantica que vem antes do input e também indica ao usuário o que fazer porém fora do campo-->
+        <input name="" type="text"> <!--imput=entrada do dado , no exmeplo é um input do tipo texto-->
+
+        <br><br> <!--colocando a tag br pois os elementos são in-line ou seja ficam lado a lado-->
+
+        <label>Nome:</label> <!--label é uma tag semantica que vem antes do input e também indica ao usuário o que fazer porém fora do campo-->
+        <input name="nome" placeholder="Digite o seu nome"> <!--placeholder é usado para eu indicar a pessoa o que ela deve escrever no campo--> <!--a tag name serve para dar nome ao dado e fazer com que ele apareça na minha url ou para aonde eu enviar-->
+
+        <br><br>
+
+        <label>E-mail:</label> <!--label é uma tag semantica que vem antes do input e também indica ao usuário o que fazer porém fora do campo-->
+        <input name="email" type="email" placeholder="digite o seu e-mail"> <!--para facilitar o usuário de preencher o e-mail--> <!--a tag name serve para dar nome ao dado e fazer com que ele apareça na minha url ou para aonde eu enviar-->
+
+        <br><br>
+
+        <label>Senha:</label> <!--label é uma tag semantica que vem antes do input e também indica ao usuário o que fazer porém fora do campo-->
+        <input name="password" type="password" placeholder="digite aqui a sua senha"> <!--utilizada para que os caracteres digitados fiquem ocultos--> <!--a tag name serve para dar nome ao dado e fazer com que ele apareça na minha url ou para aonde eu enviar-->
+
+        <br><br>
+
+        <label>Sexo:</label>
+        
+        <br>
+        
+        <input name="sexo" type="radio" value="masculino" id="masculino"> <label for="masculino">Masculino</label>
+        
+        <br>
+        
+        <input name="sexo" type="radio" value="feminino" id="feminino"> <label for="feminino">Feminino</label>
+        
+        <br>
+        
+        <input name="sexo" type="radio" value="prefiro nao informar" id="prefiro não informar"> <label for="prefiro não informar">Prefiro não informar</label> <!--opção a ser marcada , me dará alternativas onde só posso escolher uma!--> <!--nele nao ha o placeholder-->
+        <br><br>
+
+        <label>Habilidades:</label>
+
+        <br>
+
+        <!--A DIFERENÇA ENTRE O 'RADIO' E O 'CHECKBOX' É QUE O RADIO EU POSSO MARCAR APENAS UMA OPÇÃO E NO CHECKBOX EU POSSO MARCAR MAIS DE UMA OPÇÃO-->
+
+        <!-- O 'ID' E O 'FOR' MELHORAM A USABILIDADE DA PAGINA E A EXPERIENCIA DO CLIENTE FINAL CASO ELE USE O CELULAR, POIS ESSES ATRIBUTOS SÃO PARA DAR FOCO EM UMA AREA CLICAVEL DO MEU SITE-->
+
+        <input name="habilidades" type="checkbox" value="HTML" id="HTML"> <label for="HTML">HTML</label>
+
+        <br>
+
+        <input name="habilidades" type="checkbox" value="CSS" id="CSS"> <label for="CSS">CSS</label>
+
+        <br>
+
+        <input name="habilidades" type="checkbox" value="JavaScript" id="JavaScript"> <label for="JavaScript">JavaScript</label>
+
+        <br><br>
+
+        <button>Send</button> <!--tag utilizada para add um botao para enviar ao formulario-->
+    </form>
+
+
+</body>
+</html>
